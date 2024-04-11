@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Helper">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="How it works? Simple!"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="32dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="313dp"
+        android:layout_height="546dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="1) App gives you time to work, play or something else. \n \n2) It sends you a notification that time is running out. \n \n3) If you haven't finished the job, then the app will give you some time to finish the whole job and warn you about it. \n \n4) Next comes the time for rest. The app will ask you to turn off your phone. Also, it will make you turn off your phone if you turn off your phone during the extra time and try to use it again. \n \n5) Wait for a notification from your phone, it means your phone is unlocked and you are free to use it! \n \n \n \n Tips: Do not use old smartphones, it may cause errors due to an older version of Android. Give all permissions to the application so that no conflicts arise. Enable notifications, preferably with vibration."
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</android.support.constraint.ConstraintLayout>

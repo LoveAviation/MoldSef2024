@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="508dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="175dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="506dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textST"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:text="\n Screen time"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarScreen"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:max="4"
+            android:progress="1" />
+
+        <TextView
+            android:id="@+id/textTW"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:text="\n Time to warning"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarWarning"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:max="4"
+            android:progress="1" />
+
+        <TextView
+            android:id="@+id/textPT"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:text="\n Pause time"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarPause"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:max="4"
+            android:progress="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sparkPlug"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="125dp"
+        android:text="START WORKING"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bBack" />
+
+</android.support.constraint.ConstraintLayout>
